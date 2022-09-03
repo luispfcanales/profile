@@ -12,15 +12,18 @@
 <style>
   :root{
     --bg-color:linear-gradient(45deg,#4C3575,#7858A6,#fb6fe2);
+
     --bg-color-avatar:linear-gradient(25deg,#4C3575,#712B75,#7A0BC0);
-    --bg-color-btn:#F10086;
-    --bg-color-btn2:#52057B;
-    --bg-color-btn3:linear-gradient(45deg,#52057B,#712B75,#F10086);
-    --bg-color-btn4:linear-gradient(45deg,#52057B,#712B75,#F10086,#fb6fe2);
-    --text-color:#680b9c;
+    --bg-color-btn:linear-gradient(45deg,#52057B,#712B75,#F10086);
+
+    --text-color-shadow:#680b9c;
+    --text-color-primary:#4c0373;
 
     --size-height-btn:3rem;
     --bg-color-circle:radial-gradient(#F10086,#f51196);
+    --bg-color-circle-shadow:#F10086;
+    --bg-color-circle2:#52057B;
+    --bg-color-circle2-shadow:#680b9c;
   }
   main{
     position:relative;

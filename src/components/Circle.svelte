@@ -50,18 +50,18 @@
     height:25px;
     background:var(--bg-color-circle);
     border-radius:50%;
-    box-shadow: 0 0 7px var(--bg-color-btn),
-      0 0 10px var(--bg-color-btn),
-      0 0 15px var(--bg-color-btn);
+    box-shadow: 0 0 7px var(--bg-color-circle-shadow),
+      0 0 10px var(--bg-color-circle-shadow),
+      0 0 15px var(--bg-color-circle-shadow);
     top:-10px;
     animation:move-circle 15s linear infinite;
     animation-duration:calc(125s / var(--i));
   }
   span:nth-child(even){
-    background:var(--bg-color-btn2);
-    box-shadow: 0 0 7px var(--text-color),
-      0 0 10px var(--text-color),
-      0 0 15px var(--text-color);
+    background:var(--bg-color-circle2);
+    box-shadow: 0 0 7px var(--bg-color-circle2-shadow),
+      0 0 10px var(--bg-color-circle2-shadow),
+      0 0 15px var(--bg-color-circle2-shadow);
   }
   @keyframes move-circle {
   0%{

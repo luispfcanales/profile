@@ -10,7 +10,7 @@ a{
   text-align:center;
   text-decoration:none;
   color:#f5f5f5;
-  background:var(--bg-color-btn3);
+  background:var(--bg-color-btn);
   font-size:1.5rem;
   font-family:'Satisfy';
  }

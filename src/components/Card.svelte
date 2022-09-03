@@ -44,13 +44,15 @@
     margin-top:1rem;
     font-family:'Satisfy',cursive;
     font-size:2.2rem;
-    color:var(--text-color);
-    text-shadow:0 0 7px var(--text-color);
+    color:var(--text-color-primary);
+    text-shadow:0 0 7px var(--text-color-shadow),
+      0 0 10px var(--text-color-shadow),
+      0 0 13px var(--text-color-shadow);
   }
   br{
     content:" ";
     width: 70%;
-    border-bottom:2px solid var(--text-color);
+    border-bottom:2px solid var(--text-color-primary);
   }
   h2{
     margin-top:.5rem;
