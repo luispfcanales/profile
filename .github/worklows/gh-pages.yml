@@ -1,4 +1,6 @@
 name: github pages
+permissions:
+  contents: write
 
 on:
   push:
@@ -19,6 +21,6 @@ jobs:
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
-        width:
+        with:
           branch: gh-pages
           folder: public
