@@ -1,40 +1,31 @@
 <script>
-  import Card from './components/Card.svelte'
-  import Circle from './components/Circle.svelte'
+  import Profile from "./containers/Profile.svelte";
 
 </script>
 
 <main>
-  <Circle/>
-  <Card/>
+  <Profile></Profile>
 </main>
 
 <style>
   :root{
-    --bg-color:linear-gradient(45deg,#4C3575,#7858A6,#fb6fe2);
-
-    --bg-color-avatar:linear-gradient(25deg,#4C3575,#712B75,#7A0BC0);
-    --bg-color-btn:linear-gradient(45deg,#52057B,#712B75,#F10086);
-
-    --text-color-shadow:#680b9c;
-    --text-color-primary:#4c0373;
-
-    --size-height-btn:3rem;
-    --bg-color-circle:radial-gradient(#F10086,#f51196);
-    --bg-color-circle-shadow:#F10086;
-    --bg-color-circle2:#52057B;
-    --bg-color-circle2-shadow:#680b9c;
+    --bg-body-color:#16212c;
+    --bg-body-color2:#3f4d5a;
+    --line-color:#4e657e;
   }
-  main{
-    position:relative;
+  *{
     margin:0;
     padding:0;
+  }
+  main{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    position:relative;
     width:100vw;
     height:100vh;
-    background:var(--bg-color);
+    background:var(--bg-body-color);
     display:flex;
     justify-content:center;
-    align-items:center;
-    overflow:hidden;
   }
 </style>

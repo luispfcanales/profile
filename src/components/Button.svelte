@@ -1,17 +1,27 @@
-<a target="_blank" href="/">View Proyects</a>
+<script>
+  export let text = "primary"
+</script>
+<button>
+{text} 
+</button>
 <style>
-a{
-  box-sizing:border-box;
-  margin-top:1.2rem;
-  margin-bottom:1rem;
-  width:75%;
-  height:var(--size-height-btn);
-  line-height:var(--size-height-btn);
-  text-align:center;
-  text-decoration:none;
-  color:#f5f5f5;
-  background:var(--bg-color-btn);
-  font-size:1.5rem;
-  font-family:'Satisfy';
- }
-</style>
+  button{
+    margin:0;
+    margin-top: 2.6rem;
+    padding:8px 0;
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    width:90%;
+    background-color:var(--bg-body-color);
+    color:#f08f90;
+    font-size:2.5rem;
+    border:2px solid #f08f90;
+    border-radius: 10px;
+    transition:.5s;
+  }
+  button:hover{
+    background-color:#f08f90;
+    color:var(--bg-body-color);
+  } 
+  </style>
