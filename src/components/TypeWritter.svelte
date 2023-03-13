@@ -18,7 +18,7 @@
     color:#f2c150;
     border-right:3px solid #f2c150;
     animation: 
-      typing 3s steps(35),
+      typing 3s infinite steps(35) alternate,
       blink .5s infinite step-end alternate;
     overflow:hidden;
   }
@@ -30,7 +30,7 @@
   50%{ border-color: transparent; }
   }
 
-@media (max-width:800px){
+@media (max-width:1024px){
   span{
     font-size: 2.4rem;
   }

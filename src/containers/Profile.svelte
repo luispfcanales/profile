@@ -2,9 +2,13 @@
   import Avatar from "../components/Avatar.svelte";
   import Button from "../components/Button.svelte";
   import Line from "../components/Line.svelte";
+  import Modal from "../components/Modal.svelte";
   import Navbar from "../components/Navbar.svelte";
   import TypeWritter from "../components/TypeWritter.svelte";
   import Typing from "../wrapper/Typing.svelte";
+
+  let modalActive = false;
+  const modalHandler =()=>{modalActive = !modalActive} 
 </script>
 
 <svelte:head>
@@ -21,15 +25,19 @@
   <div>
     <Typing>
       <TypeWritter/>
-      <Button text={"Suscribete"}/>
+      <Button text={"Suscribete"} {modalHandler}/>
     </Typing>
     <Avatar/>
   </div>
 </container>
+<Modal 
+  {modalActive} 
+  {modalHandler}
+  blureffect={true}
+/>
 
 <style>
   container{
-    margin:0 2rem;
     width:100vw;
     box-sizing:border-box;
     display:flex;
@@ -40,12 +48,15 @@
     margin-top:3rem;
     display:flex;
     gap:2rem;
+    align-items:center;
   }
 @media (max-width:1024px){
   div{
+    flex-direction:column-reverse;
     justify-content:center;
   }
   container{
+    margin:0 2rem;
     align-items:center;
   }
 }

@@ -20,12 +20,12 @@
     flex-direction:column;
   }
   
-@media (max-width:800px){
+@media (max-width:1024px){
   div{
     align-items:center;
   }
   span{
-    font-size: 2.4rem;
+    font-size: 2rem;
   }
 }
 </style>

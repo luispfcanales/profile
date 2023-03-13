@@ -1,7 +1,8 @@
 <script>
   export let text = "primary"
+  export let modalHandler;
 </script>
-<button>
+<button on:click={modalHandler}>
 {text} 
 </button>
 <style>
@@ -12,10 +13,11 @@
     display:flex;
     justify-content:center;
     gap:10px;
-    width:90%;
+    min-width:310px;
+    max-width:360px;
     background-color:var(--bg-body-color);
     color:#f08f90;
-    font-size:2.5rem;
+    font-size:2rem;
     border:2px solid #f08f90;
     border-radius: 10px;
     transition:.5s;

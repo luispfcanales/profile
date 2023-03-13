@@ -5,7 +5,7 @@
   div{
     box-sizing:border-box;
     margin:0 auto;
-    width:300px;
+    width:360px;
     background-color:#9cb6c9;
     transition:.7s;
     border-radius:50%;
@@ -21,8 +21,8 @@
   }
 
 @media (max-width:1024px){
-  div{
-      display:none;
-  }
+    div{
+    max-width:320px;
+    }
 }
 </style>
